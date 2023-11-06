@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joella</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+</head>
+<body class="bg-color-primary text-color-white tracking-wider">
+    <header class="sticky top-0 z-50">
+        <nav class="container flex justify-between items-center">
+            <div class="py-5 text-color-secondary font-bold text-3xl">
+                <a href="#home">
+                    <span class="text-color-white">Joella</span> Portfolio
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6">
+                    <li><a href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#about" class="hover:text-color-secondary ease-in duration-200">About</a></li>
+                    <li><a href="#education" class="hover:text-color-secondary ease-in duration-200">Education</a></li>
+                    <li><a href="#skill" class="hover:text-color-secondary ease-in duration-200">Skill</a></li>
+                    <li><a href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile screen  -->
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20">
+                    <li><a id="hLink" href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hLink" href="#about" class="hover:text-color-secondary ease-in duration-200">About</a></li>
+                    <li><a id="hLink" href="#education" class="hover:text-color-secondary ease-in duration-200">Education</a></li>
+                    <li><a id="hLink" href="#skill" class="hover:text-color-secondary ease-in duration-200">Skill</a></li>
+                    <li><a id="hLink" href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Home -->
+    <section id="home" class="relative">
+
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+      <div class="container py-20">
+            <div class="flex flex-col items-center z-20 md:flex-row">
+                <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                    <h1 class="text-4xl font-bold mb-4">Hey there! 🤩</h1>
+                    <p class="leading-relaxed mb-10"> I'm Joella, Tachapol Chaimongkolsup I'm a first-year student at KMUTT University, studying International Computer Engineering. </p>
+                    <a href="#about">
+                        <button class="btn">See more</button> 
+                    </a>
+                </div>
+
+                <div class="md:w-1/2">
+                    <img src="img/3d.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-6 md:w-1/2">
+                <h4 class="font-bold text-color-secondary mb-4">About</h4>
+                <h1 class="title">"Fact about me"</h1>
+            </div>
+
+            <!-- review container  -->
+            <div class="mt-3">
+                <div class="flex items-center justify-center flex-wrap mb-6 ">
+                    <div class="bg-color-primary"></div>
+                    <img src="./img/user1.png" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic active-pic" onclick="showReview()">
+                    <img src="./img/user2.png" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                    <img src="./img/user3.png" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                    <img src="./img/user4.png" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                    <img src="./img/user5.png" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                </div>
+
+                <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[30vh]">
+                    <div class="user-text active-text">
+                        <p class="md:text-xl mb-6">When I was 18, I got my first job in a restaurant as a member of the restaurant management team.</p>
+                    </div>
+
+                    <div class="user-text">
+                        <p class="md:text-xl mb-6">I am someone who consumes a lot of coffee. I can easily consume 5 cups of coffee per day. Caffeine is one of my favorite substances.</p>
+                    </div>
+
+                    <div class="user-text">
+                        <p class="md:text-xl mb-6">I often can't answer the question why I studied computer engineering.</p>
+                    </div>
+
+                    <div class="user-text">
+                        <p class="md:text-xl mb-6">Really like driving. 🚗</p>
+                    </div>
+
+                    <div class="user-text">
+                        <p class="md:text-xl mb-6">I want to be rich 💸</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <div class="container py-20">
+        
+            <div class="text-center m-auto mb-10 md:w-1/2">
+                <h4 class="font-bold text-color-secondary">Education</h4>
+            </div>
+            <!-- Card 1 -->
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
+
+                <div class="bg-indigo-500 border-2 border-solid border-color-gray text-center py-10 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    <h3 class="text-2xl font-bold pb-4">Elementary School</h3>
+                    <div class="inline-block h-2 rounded-2xl py-3 px-6">
+                        <img class="w-auto" style="height: 200px" src="/img/bsru.png" alt="">
+                    </div>
+                    <h4 class="text-xl font-bold pb-4">The Demonstration School of Bansomdejchaopraya Rajabhat University</h4>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-color-primary border-2 border-solid border-color-gray text-center py-10 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    <h3 class="text-2xl font-bold mb-10">High School</h3>
+                    <div class="inline-block bg-color-white h-23 w-23 rounded-full mb-10">
+                        <img class="w-auto" style="height: 150px" src="/img/sk.png" alt="">
+                    </div>
+                    <h4 class="text-xl font-bold pb-4">Suankularb Wittayalai School</h4>
+                    <h4>(Scince-Math Program)</h4>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-color-primary-dark border-2 border-solid border-color-gray text-center py-10 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    <h3 class="text-2xl font-bold pb-4">Now</h3>
+                    <div class="inline-block h-2 rounded-2xl py-3 px-6">
+                        <img class="w-auto" style="height: 200px" src="/img/kmutt.png" alt="">
+                    </div>
+                    <h4 class="text-xl font-bold pb-4">Bachelor of Engineering Program in Computer Engineering</h4>
+                </div>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- Skill -->
+    <section id="skill">
+        <div class="container py-20 relative">
+                <div class="text-center m-auto md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Skill</h4>
+                </div>
+                <div class="flex justify-center">
+                    <div class="scroller" data-speed="slow">
+                        <ul class="tag-list scroller__inner">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                            <li>MYSQLI</li>
+                            <li>JAVA</li>
+                            <li>UX/UI</li>
+                            <li>SQL</li>
+                            <li>Webdev</li>
+                            <li>Data</li>
+                            <li>Marketing</li>
+                            <li>UX/UI</li>
+                            <li>Webdev</li>
+                            <li>Animation</li>        
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="flex justify-center">
+                    <div class="scroller" data-direction="left" data-speed="fast">
+                        <ul class="tag-list scroller__inner">
+                            <li>Communication</li>
+                            <li>Teamwork</li>
+                            <li>Organization</li>
+                            <li>Animation</li>
+                            <li>Adaptability</li>
+                            <li>Leadership</li>
+                            <li>Communication</li>
+                            <li>Teamwork</li>
+                            <li>Organization</li>
+                            <li>Adaptability</li>
+                            <li>Leadership</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <div id="toggleBtn">
+ 
+    <!-- Contact -->
+        <section id="contact">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Have A Questation</h4>
+                    <h1 class="title">Get In Touch</h1>
+                </div>
+
+                <form>
+                    <div class="w-full m-auto text-center md:w-2/3">
+                        <div class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2">
+                            <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Name">
+                            <input type="email" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Email">
+                            <input type="tel" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Phone">
+                            <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Company">
+                        </div>
+                        <textarea rows="4" class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Message"></textarea>
+                        <button class="btn mt-10">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="bg-color-primary-dark relative">
+                <div class="container py-10">
+                    <div class="grid gap-10 pb-10">
+                        <div class="space-y-6">
+                            <div class="flex gap-5 items-center justify-center">
+                                <a href="https://www.facebook.com/tachapol.false">
+                                    <i class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary"></i>
+                                </a>
+                                <a href="https://www.instagram.com/mysteriouz__/">
+                                    <i class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"></i>
+                                </a>
+                                <a href="tel:0959254379">
+                                    <i class="fa-solid fa-phone cursor-pointer hover:text-color-secondary"></i> 095-925-4379
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                                <ul class="text-center">
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Home</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#about">About</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#education">Education</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#skill">Skill</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#contact">Contact</a></li>
+                                </ul>
+                        </div>
+                    
+                    </div>
+
+
+                    <div class="flex justify-center pt-10 border-t border-color-gray">
+                        <p>2023 &copy; Jeolla. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const navbar = document.querySelector('header');
+        const sectionn = document.querySelectorAll('section');
+        const navlinkss = document.querySelectorAll('nav ul li a');
+
+        window.onscroll = () => {
+            if(window.scrollY > 100) {
+                navbar.classList.add('bg-color-primary-dark');
+                navbar.classList.add('border-b');
+                navbar.classList.add('border-color-gray');
+            } else {
+                navbar.classList.remove('bg-color-primary-dark');
+                navbar.classList.remove('border-b');
+                navbar.classList.remove('border-color-gray');
+            }
+
+            // active link
+            let current = 'home';
+
+            sectionn.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if(pageYOffset >= sectionTop-60) {
+                    current = section.getAttribute('id');
+                }
+            })
+            navlinkss.forEach((item) => {
+                item.classList.remove('text-color-secondary');
+                if(item.href.includes(current)) {
+                    item.classList.add("text-color-secondary");
+                } 
+            });
+        }
+
+        // Mobile menu
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hLink = document.querySelectorAll('#hLink');
+        const faSolid = document.querySelector(".fa-solid");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+
+        hLink.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark');
+            })
+        })
+
+        // About
+        const userTexts = document.getElementsByClassName('user-text');
+        const userPics = document.getElementsByClassName('user-pic');
+
+        function showReview() {
+            for(userPic of userPics) {
+                userPic.classList.remove("active-pic");
+            }
+            for(userText of userTexts) {
+                userText.classList.remove("active-text");
+            }
+
+            let i = Array.from(userPics).indexOf(event.target);
+
+            userPics[i].classList.add('active-pic');
+            userTexts[i].classList.add('active-text');
+        }
+
+        //Infinite Scroll
+        const scrollers = document.querySelectorAll(".scroller");   
+
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            addAnimation();
+        }
+
+        function addAnimation() {
+        scrollers.forEach((scroller) => {
+            scroller.setAttribute("data-animated", true);
+
+            const scrollerInner = scroller.querySelector(".scroller__inner");
+            const scrollerContent = Array.from(scrollerInner.children);
+
+            scrollerContent.forEach((item) => {
+            const duplicatedItem = item.cloneNode(true);
+            duplicatedItem.setAttribute("aria-hidden", true);
+            scrollerInner.appendChild(duplicatedItem);
+            });
+        });
+        }
+        
+    </script>
+</body>
+</html>
